@@ -1,0 +1,110 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+.left-side img {
+    margin-right: 90px;
+    max-width: 100%;
+    height: auto;
+    width: 100vh; 
+    height: 80vh;
+}
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #152B50;
+}
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-box h1 {
+    color: #3F418C;
+}
+.login-box p {
+    color: #555;
+}
+.login-box form {
+    margin-top: 20px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #3F418C; 
+    padding: 10px;
+    border-radius: 22px;
+}
+
+.input-group .icon {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px;
+    filter: brightness(0) invert(10); 
+}
+
+.input-group .input-field {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.input-group label {
+    color: #fff; 
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.login-box button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3F418C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px; 
+}
+.login-box a {
+    color: #152B50;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block; 
+}
+
+/* Estilo predeterminado para campos de autocompletado */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    background-color: #3F418C !important; /* Fondo personalizado */
+    color: #fff !important; /* Color de texto blanco */
+    font-family: 'Montserrat', sans-serif !important; /* Fuente consistente */
+    -webkit-box-shadow: 0 0 0px 1000px #3F418C inset !important; /* Sombra para evitar el cambio de fondo */
+    border-radius: 22px !important;
+    transition: background-color 5000s ease-in-out 0s !important; /* Prevenir cambios abruptos de fondo */
+}
+
+/* Si el campo se llena con autocompletado, aseguramos que el texto sea blanco */
+input.autofill,
+textarea.autofill {
+    color: white !important;
+}
